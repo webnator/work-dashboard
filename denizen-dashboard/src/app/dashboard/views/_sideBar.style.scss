@@ -1,0 +1,123 @@
+@mixin movement-animation($width, $height, $font-size, $position, $name) {
+
+  @keyframes #{$name} {
+    to {
+      width: $width;
+      height: $height;
+      font-size: $font-size;
+      top: $position;
+    }
+  }
+  animation-name: $name;
+}
+
+.module-dashboard {
+  .side-bar {
+    height: 75vh;
+    margin: 2.5vh 0%;
+    font-size: 20px;
+    overflow-y: hidden;
+    overflow-x: visible;
+    position: relative;
+
+    .info-container {
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0px 0px 8px 3px transparentize($primary-light, 0.65), inset 0px 0px 8px 3px transparentize($primary-light, 0.65);
+      border-radius: 5px;
+      background-color: transparentize($primary-color, 0.6);
+      color: #FFFFFF;
+      margin: 1vh 0%;
+      padding: 1vh 0.7vw;
+      overflow: hidden;
+      animation-duration: 0.5s;
+      position: absolute;
+
+
+      $width-change: 10;
+
+
+      &:nth-child(2), &:nth-child(6) {
+        width: 80%;
+        font-size: 0.6em;
+        height: 9vh;
+      }
+      &:nth-child(3), &:nth-child(5) {
+        width: 90%;
+        font-size: 0.9em;
+        height: 15vh;
+      }
+      &:nth-child(4) {
+        width: 100%;
+        font-size: 1em;
+        height: 20vh;
+      }
+      &:nth-child(1), &:nth-child(7) {
+        width: 70%;
+        font-size: 0.4em;
+        height: 2vh;
+      }
+
+
+      &:nth-child(1) {
+        top: -7vh;
+        &.animate-down {
+          @include movement-animation(80%, 9vh, 0.6em, 0vh, animate_card_1_down);
+        }
+      }
+      &:nth-child(2) {
+        top: 0vh;
+        &.animate-up {
+          @include movement-animation(70%, 2vh, 0.4em, -7vh, animate_card_2_up);
+        }
+        &.animate-down {
+          @include movement-animation(90%, 15vh, 0.9em, 10vh, animate_card_2_down);
+        }
+      }
+      &:nth-child(3) {
+        top: 10vh;
+        &.animate-up {
+          @include movement-animation(80%, 9vh, 0.6em, 0vh, animate_card_3_up);
+        }
+        &.animate-down {
+          @include movement-animation(100%, 20vh, 1em, 26vh, animate_card_3_down);
+        }
+      }
+      &:nth-child(4) {
+        top: 26vh;
+        &.animate-up {
+          @include movement-animation(90%, 15vh, 0.9em, 10vh, animate_card_4_up);
+        }
+        &.animate-down {
+          @include movement-animation(90%, 15vh, 0.9em, 47vh, animate_card_4_down);
+        }
+      }
+      &:nth-child(5) {
+        top: 47vh;
+        &.animate-up {
+          @include movement-animation(100%, 20vh, 1em, 26vh, animate_card_5_up);
+        }
+        &.animate-down {
+          @include movement-animation(80%, 9vh, 0.6em, 63vh, animate_card_5_down);
+        }
+      }
+      &:nth-child(6) {
+        top: 63vh;
+        &.animate-up {
+          @include movement-animation(90%, 15vh, 0.9em, 47vh, animate_card_6_up);
+        }
+        &.animate-down {
+          @include movement-animation(70%, 2vh, 0.4em, 75vh, animate_card_6_down);
+        }
+      }
+      &:nth-child(7) {
+        top: 75vh;
+        &.animate-up {
+          @include movement-animation(80%, 9vh, 0.6em, 63vh, animate_card_7_up);
+        }
+      }
+
+
+    }
+
+  }
+}

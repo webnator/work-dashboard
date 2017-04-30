@@ -1,0 +1,13 @@
+<div class="main">
+  <div class="row">
+    <div class="col-xs-12">
+      <div ng-if="vm.selectedCard !== null && vm.isCardSelected === true">
+        Color: <span class="color-box" ng-style="{'background-color': vm.selectedCard.colorCode }"></span>
+      </div>
+
+      <div ng-if="vm.selectedCard === null || vm.isCardSelected !== true" class="logo-container">
+        <img class="main-logo" src="resources/denizen-logo-sm.png" />
+      </div>
+    </div>
+  </div>
+</div>

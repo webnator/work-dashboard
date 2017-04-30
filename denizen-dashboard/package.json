@@ -1,0 +1,25 @@
+{
+  "name": "denizen-dashboard",
+  "version": "1.0.0",
+  "description": "proof of concept of integrated dashboard with voice control",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.6",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-debug": "^3.0.0",
+    "gulp-inject": "^4.2.0",
+    "gulp-main-bower-files": "^1.6.1",
+    "gulp-uglify": "^2.0.0",
+    "gulp-useref": "^3.1.2",
+    "wiredep": "^4.0.0"
+  },
+  "dependencies": {
+    "gulp-sass": "^3.0.0"
+  }
+}

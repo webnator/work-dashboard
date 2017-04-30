@@ -1,0 +1,42 @@
+{
+  "name": "denizen-dashboard",
+  "description": "proof of concept of integrated dashboard with voice control",
+  "main": "index.js",
+  "authors": [
+    "Williams Aguilera <webnator@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angular-bootstrap": "^2.4.0",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "angular-ui-router": "^0.3.2",
+    "angular-ui-clock": "^0.5.1",
+    "lodash": "^4.17.4",
+    "socket.io-client": "^1.7.2",
+    "ng-websocket": "^0.2.1"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js",
+        "dist/fonts/**/*"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "css/font-awesome.css"
+      ]
+    }
+  }
+}

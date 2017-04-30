@@ -1,0 +1,14 @@
+
+#Unnecesary folders
+hottowel
+ideas
+ms-kygc-interview
+ng-poly-test
+full-stack
+
+#Auto-generated folders
+*/.idea
+*/bower_components
+*/node_modules
+*/build
+

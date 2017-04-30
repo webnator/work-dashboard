@@ -1,0 +1,11 @@
+<div class="side-bar">
+
+
+  <div class="info-container" ng-repeat="n in [0, 1, 2, 3, 4, 5, 6]" ng-class="{ 'animate-up': vm.isCycling === vm.ANIMATION_DIRECTION.UP, 'animate-down': vm.isCycling === vm.ANIMATION_DIRECTION.DOWN }">
+    {{ vm.currentContents[n].content }}
+
+    <super-container section="vm.currentContents[n]"></super-container>
+  </div>
+
+
+</div>

@@ -1,0 +1,29 @@
+
+.module-dashboard {
+  .main {
+
+    .color-box {
+      width: 15px;
+      height: 15px;
+      position: relative;
+      display: inline-block;
+      border: 1px solid $primary-color;
+    }
+
+    .logo-container {
+      position: relative;
+      height: 65vh;
+      .main-logo {
+        width: 100%;
+        opacity: 0.1;
+        padding: 30%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+  }
+}

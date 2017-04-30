@@ -1,0 +1,10 @@
+<div class="row bottom-bar">
+  <div class="col-xs-12">
+    <button ng-click="vm.direction === 'down' ? vm.direction = 'up':vm.direction = 'down' ">Change direction</button>
+
+    <input type="text" ng-model="card"/>
+    <button ng-click="vm.selectSection(card)">Choose card</button>
+
+    <button ng-click="vm.resumeAnimation()">Resume</button>
+  </div>
+</div>
